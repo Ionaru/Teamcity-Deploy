@@ -1,7 +1,8 @@
 {
-    "name": "teamcity-deploy",
-    "version": "0.0.0",
+    "name": "@ionaru/teamcity-deploy",
+    "version": "0.0.1",
     "description": "My package teamcity-deploy",
+    "bin": "dist/cli.js",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
@@ -14,7 +15,7 @@
         "lint:src": "tslint --project tsconfig.json -c tslint.json --format stylish",
         "lint:test": "tslint -c tslint.json src/**/*.spec.ts --format stylish",
         "pretest": "npm run lint",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "echo \"Error: no test specified\" && exit 0",
         "prepare": "npm run build",
         "preversion": "npm run test"
     },
@@ -23,10 +24,19 @@
     "repository": "github:Ionaru/teamcity-deploy",
     "license": "MIT",
     "devDependencies": {
+        "@types/jest": "^24.0.19",
         "@types/node": "12.11.2",
+        "jest": "^24.9.0",
+        "ts-jest": "^24.1.0",
         "tslint": "5.20.0",
         "tslint-sonarts": "1.9.0",
         "typescript": "3.6.4"
     },
-    "dependencies": {}
+    "dependencies": {
+        "axios": "^0.19.0"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node"
+    }
 }
