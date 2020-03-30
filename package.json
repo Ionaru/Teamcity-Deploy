@@ -1,7 +1,7 @@
 {
     "name": "@ionaru/teamcity-deploy",
     "version": "0.1.0",
-    "description": "My package teamcity-deploy",
+    "description": "A tiny script to trigger a build on Teamcity and await its result",
     "bin": "dist/cli.js",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
