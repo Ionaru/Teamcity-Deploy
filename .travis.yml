@@ -13,7 +13,7 @@ jobs:
               - provider: npm
                 email: info@saturnserver.org
                 api_key:
-                    secure: IGY7thOf5KBU0O4NVbwbkrJviEEa6TR+XHjrZRw9Xo21e1WTO5bymee2FS/gsWv/dtrpC3FGeuIu68lQFoaospSvwuTiJFxWo4dlYBEn22EbN8Ceo4DDQ/lKTP8eoH93xRqeS1G1rM+NoiRmAe2oGfIsavO6RJyuhXSMpYenCqcT8btgJMhP/Pf2KIxJbyrINUUHawhpUVCYASm4CSGbzdRwn6T+Ff9p2/Szimju6wccO+kw5zVBvI2CxGW4WzA53kECzR75JOQul2zWL0fRND2YGkrnK/dvJFPrpc+hl44Oc3G6emq+byppYHiF2DJspJCnUt67QIfExwpgF50odosEcEKcTYeMzfAP8Rhp30grwqx5CqMrY32eKCOjIWQ0iOugo4PvQfiKdHwzEfcviWCpWPNeqbAPYnyZQdfAvVG/c1dnUl1zM5u1Yi+yzm97nrP8Z94UA5Xywn1VPfM1RScfEPZvtOl7DvCGDZJ0vFnZL9XFLghtoLrMhSzR15C+hx8z9ri9CImv1qvNsbNrFvzRotQlrgySsOuxVuVRqyeWUwjm+4rI0HYIw9BZvEd5VPcfWqPn6MzYQhZynMrrtCWOcrp2uWWFxCh/1TH0AU1ff7tTKj941R2zHAhkOuKcP0MvPCqcK6GmC7J8c7CaidNv9hDFGLNiod5AU/lPp4U=
+                    secure: rj42dP9cy4c4xjORuMGUqPcuQJwbwihduR6fFLRmQXpyAwVH86ZitVHej8cGnjwcCQaC+vN5WpeihWL1R3nvjrwp18y6wZJGyrn9cWmm6xIGU1Zvt261uih4wxTQak8Z63fNMDSgM28EWa1HSwYjOZFJzqS+/j+GmB4LM9QcpOQUv26rI+LO94BfadbPBNkKO74kCdj0/WmseA4JPJbxVAKm3MlmbpYj3wEkEJzEwpM555TTegRbn2uyOxSj/n9hcu1a2lxK3WMKrd9Nf58U+jIcnlsyxVSqDh/XCqJsHCfrQmpPNTERBSstprn1fkjhiNmvkvzyCFxxPl6fvTV7H+WMno+n5dlAVdvo4W12jDNQe3fkD2N+qnc4CoYVZ8RDgL0LmJVzQH36eW7n24xexWY7kf70kvINK08oxCl9PFptvqViKNyKDtu9SjYpXXMI7RwAAREjOUZZaowTKjE655C1VOVlZILw/2ilId1q0GxvC86/6H3jZy3XPY5ucj4ogYMRJIYSI5mZsSajjv421ONkz5yHkdXumyKLYxZ9GHUA74HMlHWxGCZ4yNpaiGXAA0gSDACn+Cn5E3jLthAJ0umX4BpclzjOylak2dA6bPwxWrbCVcDCRZVuGqndbLu9TopgfdGVBs8TXw89zsLsq4R8Kh+7NQBk3wQfhMV1euo=
                 tag: next
                 skip_cleanup: true
                 on:
@@ -22,7 +22,7 @@ jobs:
               - provider: npm
                 email: info@saturnserver.org
                 api_key:
-                    secure: IGY7thOf5KBU0O4NVbwbkrJviEEa6TR+XHjrZRw9Xo21e1WTO5bymee2FS/gsWv/dtrpC3FGeuIu68lQFoaospSvwuTiJFxWo4dlYBEn22EbN8Ceo4DDQ/lKTP8eoH93xRqeS1G1rM+NoiRmAe2oGfIsavO6RJyuhXSMpYenCqcT8btgJMhP/Pf2KIxJbyrINUUHawhpUVCYASm4CSGbzdRwn6T+Ff9p2/Szimju6wccO+kw5zVBvI2CxGW4WzA53kECzR75JOQul2zWL0fRND2YGkrnK/dvJFPrpc+hl44Oc3G6emq+byppYHiF2DJspJCnUt67QIfExwpgF50odosEcEKcTYeMzfAP8Rhp30grwqx5CqMrY32eKCOjIWQ0iOugo4PvQfiKdHwzEfcviWCpWPNeqbAPYnyZQdfAvVG/c1dnUl1zM5u1Yi+yzm97nrP8Z94UA5Xywn1VPfM1RScfEPZvtOl7DvCGDZJ0vFnZL9XFLghtoLrMhSzR15C+hx8z9ri9CImv1qvNsbNrFvzRotQlrgySsOuxVuVRqyeWUwjm+4rI0HYIw9BZvEd5VPcfWqPn6MzYQhZynMrrtCWOcrp2uWWFxCh/1TH0AU1ff7tTKj941R2zHAhkOuKcP0MvPCqcK6GmC7J8c7CaidNv9hDFGLNiod5AU/lPp4U=
+                    secure: rj42dP9cy4c4xjORuMGUqPcuQJwbwihduR6fFLRmQXpyAwVH86ZitVHej8cGnjwcCQaC+vN5WpeihWL1R3nvjrwp18y6wZJGyrn9cWmm6xIGU1Zvt261uih4wxTQak8Z63fNMDSgM28EWa1HSwYjOZFJzqS+/j+GmB4LM9QcpOQUv26rI+LO94BfadbPBNkKO74kCdj0/WmseA4JPJbxVAKm3MlmbpYj3wEkEJzEwpM555TTegRbn2uyOxSj/n9hcu1a2lxK3WMKrd9Nf58U+jIcnlsyxVSqDh/XCqJsHCfrQmpPNTERBSstprn1fkjhiNmvkvzyCFxxPl6fvTV7H+WMno+n5dlAVdvo4W12jDNQe3fkD2N+qnc4CoYVZ8RDgL0LmJVzQH36eW7n24xexWY7kf70kvINK08oxCl9PFptvqViKNyKDtu9SjYpXXMI7RwAAREjOUZZaowTKjE655C1VOVlZILw/2ilId1q0GxvC86/6H3jZy3XPY5ucj4ogYMRJIYSI5mZsSajjv421ONkz5yHkdXumyKLYxZ9GHUA74HMlHWxGCZ4yNpaiGXAA0gSDACn+Cn5E3jLthAJ0umX4BpclzjOylak2dA6bPwxWrbCVcDCRZVuGqndbLu9TopgfdGVBs8TXw89zsLsq4R8Kh+7NQBk3wQfhMV1euo=
                 skip_cleanup: true
                 on:
                     branch: master
