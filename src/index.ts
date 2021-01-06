@@ -39,7 +39,7 @@ export async function deploy(host: string, buildType: string, apiKey: string) {
 
                 switch (response.data.status) {
                     case 'SUCCESS':
-                        resolve();
+                        resolve(undefined);
                         return;
                     case 'FAILURE':
                     default:
