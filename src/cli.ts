@@ -13,7 +13,7 @@ if (!host || !host.length) {
 
 const buildType = process.argv[3];
 if (!buildType || !buildType.length) {
-    throw new Error('A valid "host" parameter must be provided.');
+    throw new Error('A valid "buildType" parameter must be provided.');
 }
 
 const apiKey = process.argv[4] || process.env.TEAMCITY_API_KEY;

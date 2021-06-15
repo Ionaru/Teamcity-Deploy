@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Script now sends JSON instead of XML.
 
+### Fixed
+- Second parameter error message.
+
 ## [1.1.0] - 2021-01-06
 ### Added
 - Node.js 14 support.
