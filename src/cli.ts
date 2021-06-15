@@ -21,7 +21,12 @@ if (!apiKey || !apiKey.length) {
     throw new Error('A Teamcity API key must be provided through a command argument or the "TEAMCITY_API_KEY" environment variable.');
 }
 
-deploy(host, buildType, apiKey).then(() => {
+// Will grab all params with the format key=value.
+const params = process.argv
+    .filter((arg) => arg.includes('='))
+    .map((arg) => arg.split(/=(.+)/, 2));
+
+deploy(host, buildType, apiKey, params).then(() => {
     process.exit(0);
 }).catch((message) => {
     process.stderr.write(message + '\n');

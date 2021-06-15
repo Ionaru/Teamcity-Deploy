@@ -1,17 +1,29 @@
 import axios, { AxiosError } from 'axios';
 
-export async function deploy(host: string, buildType: string, apiKey: string) {
+export async function deploy(host: string, buildType: string, apiKey: string, params: string[][]) {
 
     const headers = {
         'Accept': 'application/json',
         'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/xml',
+        'Content-Type': 'application/json',
         'Origin': '*',
     };
 
     const buildQueueResponse = await axios.post(
         `https://${host}/app/rest/buildQueue`,
-        `<build><buildType id="${buildType}"></buildType></build>`,
+        {
+            buildType: {
+                id: buildType,
+            },
+            properties: {
+                property: [...params.map((arg) => {
+                    return {
+                        name: arg[0],
+                        value: arg[1],
+                    };
+                })],
+            },
+        },
         {headers},
     ).catch((e: AxiosError) => e);
 
