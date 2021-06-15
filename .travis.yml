@@ -1,31 +1,31 @@
 language: node_js
 node_js:
-    - '14' # EOL: April 2023
-    - '12' # EOL: April 2022
+  - '14' # EOL: April 2023
+  - '12' # EOL: April 2022
 
 jobs:
-    include:
-        - stage: deploy
-          node_js: "lts/*"
-          script: skip
-          before_deploy:
-              - if [ "$TRAVIS_BRANCH" = master ] && [ "$TRAVIS_PULL_REQUEST" = false ]; then npm version prerelease --no-git-tag-version --preid "$TRAVIS_BUILD_NUMBER"; fi
-          deploy:
-              - provider: npm
-                email: info@saturnserver.org
-                api_key:
-                    secure: rj42dP9cy4c4xjORuMGUqPcuQJwbwihduR6fFLRmQXpyAwVH86ZitVHej8cGnjwcCQaC+vN5WpeihWL1R3nvjrwp18y6wZJGyrn9cWmm6xIGU1Zvt261uih4wxTQak8Z63fNMDSgM28EWa1HSwYjOZFJzqS+/j+GmB4LM9QcpOQUv26rI+LO94BfadbPBNkKO74kCdj0/WmseA4JPJbxVAKm3MlmbpYj3wEkEJzEwpM555TTegRbn2uyOxSj/n9hcu1a2lxK3WMKrd9Nf58U+jIcnlsyxVSqDh/XCqJsHCfrQmpPNTERBSstprn1fkjhiNmvkvzyCFxxPl6fvTV7H+WMno+n5dlAVdvo4W12jDNQe3fkD2N+qnc4CoYVZ8RDgL0LmJVzQH36eW7n24xexWY7kf70kvINK08oxCl9PFptvqViKNyKDtu9SjYpXXMI7RwAAREjOUZZaowTKjE655C1VOVlZILw/2ilId1q0GxvC86/6H3jZy3XPY5ucj4ogYMRJIYSI5mZsSajjv421ONkz5yHkdXumyKLYxZ9GHUA74HMlHWxGCZ4yNpaiGXAA0gSDACn+Cn5E3jLthAJ0umX4BpclzjOylak2dA6bPwxWrbCVcDCRZVuGqndbLu9TopgfdGVBs8TXw89zsLsq4R8Kh+7NQBk3wQfhMV1euo=
-                tag: next
-                skip_cleanup: true
-                on:
-                    branch: master
-                    repo: Ionaru/Teamcity-Deploy
-              - provider: npm
-                email: info@saturnserver.org
-                api_key:
-                    secure: rj42dP9cy4c4xjORuMGUqPcuQJwbwihduR6fFLRmQXpyAwVH86ZitVHej8cGnjwcCQaC+vN5WpeihWL1R3nvjrwp18y6wZJGyrn9cWmm6xIGU1Zvt261uih4wxTQak8Z63fNMDSgM28EWa1HSwYjOZFJzqS+/j+GmB4LM9QcpOQUv26rI+LO94BfadbPBNkKO74kCdj0/WmseA4JPJbxVAKm3MlmbpYj3wEkEJzEwpM555TTegRbn2uyOxSj/n9hcu1a2lxK3WMKrd9Nf58U+jIcnlsyxVSqDh/XCqJsHCfrQmpPNTERBSstprn1fkjhiNmvkvzyCFxxPl6fvTV7H+WMno+n5dlAVdvo4W12jDNQe3fkD2N+qnc4CoYVZ8RDgL0LmJVzQH36eW7n24xexWY7kf70kvINK08oxCl9PFptvqViKNyKDtu9SjYpXXMI7RwAAREjOUZZaowTKjE655C1VOVlZILw/2ilId1q0GxvC86/6H3jZy3XPY5ucj4ogYMRJIYSI5mZsSajjv421ONkz5yHkdXumyKLYxZ9GHUA74HMlHWxGCZ4yNpaiGXAA0gSDACn+Cn5E3jLthAJ0umX4BpclzjOylak2dA6bPwxWrbCVcDCRZVuGqndbLu9TopgfdGVBs8TXw89zsLsq4R8Kh+7NQBk3wQfhMV1euo=
-                skip_cleanup: true
-                on:
-                    branch: master
-                    tags: true
-                    repo: Ionaru/Teamcity-Deploy
+  include:
+    - stage: deploy
+      node_js: "lts/*"
+      script: skip
+      before_deploy:
+        - if [ "$TRAVIS_BRANCH" = master ] && [ "$TRAVIS_PULL_REQUEST" = false ]; then npm version prerelease --no-git-tag-version --preid "$TRAVIS_BUILD_NUMBER"; fi
+      deploy:
+        - provider: npm
+          email: info@saturnserver.org
+          api_key:
+            secure: rj42dP9cy4c4xjORuMGUqPcuQJwbwihduR6fFLRmQXpyAwVH86ZitVHej8cGnjwcCQaC+vN5WpeihWL1R3nvjrwp18y6wZJGyrn9cWmm6xIGU1Zvt261uih4wxTQak8Z63fNMDSgM28EWa1HSwYjOZFJzqS+/j+GmB4LM9QcpOQUv26rI+LO94BfadbPBNkKO74kCdj0/WmseA4JPJbxVAKm3MlmbpYj3wEkEJzEwpM555TTegRbn2uyOxSj/n9hcu1a2lxK3WMKrd9Nf58U+jIcnlsyxVSqDh/XCqJsHCfrQmpPNTERBSstprn1fkjhiNmvkvzyCFxxPl6fvTV7H+WMno+n5dlAVdvo4W12jDNQe3fkD2N+qnc4CoYVZ8RDgL0LmJVzQH36eW7n24xexWY7kf70kvINK08oxCl9PFptvqViKNyKDtu9SjYpXXMI7RwAAREjOUZZaowTKjE655C1VOVlZILw/2ilId1q0GxvC86/6H3jZy3XPY5ucj4ogYMRJIYSI5mZsSajjv421ONkz5yHkdXumyKLYxZ9GHUA74HMlHWxGCZ4yNpaiGXAA0gSDACn+Cn5E3jLthAJ0umX4BpclzjOylak2dA6bPwxWrbCVcDCRZVuGqndbLu9TopgfdGVBs8TXw89zsLsq4R8Kh+7NQBk3wQfhMV1euo=
+          tag: next
+          skip_cleanup: true
+          on:
+            branch: master
+            repo: Ionaru/Teamcity-Deploy
+        - provider: npm
+          email: info@saturnserver.org
+          api_key:
+            secure: rj42dP9cy4c4xjORuMGUqPcuQJwbwihduR6fFLRmQXpyAwVH86ZitVHej8cGnjwcCQaC+vN5WpeihWL1R3nvjrwp18y6wZJGyrn9cWmm6xIGU1Zvt261uih4wxTQak8Z63fNMDSgM28EWa1HSwYjOZFJzqS+/j+GmB4LM9QcpOQUv26rI+LO94BfadbPBNkKO74kCdj0/WmseA4JPJbxVAKm3MlmbpYj3wEkEJzEwpM555TTegRbn2uyOxSj/n9hcu1a2lxK3WMKrd9Nf58U+jIcnlsyxVSqDh/XCqJsHCfrQmpPNTERBSstprn1fkjhiNmvkvzyCFxxPl6fvTV7H+WMno+n5dlAVdvo4W12jDNQe3fkD2N+qnc4CoYVZ8RDgL0LmJVzQH36eW7n24xexWY7kf70kvINK08oxCl9PFptvqViKNyKDtu9SjYpXXMI7RwAAREjOUZZaowTKjE655C1VOVlZILw/2ilId1q0GxvC86/6H3jZy3XPY5ucj4ogYMRJIYSI5mZsSajjv421ONkz5yHkdXumyKLYxZ9GHUA74HMlHWxGCZ4yNpaiGXAA0gSDACn+Cn5E3jLthAJ0umX4BpclzjOylak2dA6bPwxWrbCVcDCRZVuGqndbLu9TopgfdGVBs8TXw89zsLsq4R8Kh+7NQBk3wQfhMV1euo=
+          skip_cleanup: true
+          on:
+            branch: master
+            tags: true
+            repo: Ionaru/Teamcity-Deploy
