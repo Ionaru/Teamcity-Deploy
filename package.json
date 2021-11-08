@@ -1,6 +1,6 @@
 {
     "name": "@ionaru/teamcity-deploy",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "A tiny script to trigger a build on Teamcity and await its result",
     "bin": "dist/cli.js",
     "main": "dist/index.js",
