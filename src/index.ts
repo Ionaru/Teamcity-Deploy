@@ -1,6 +1,6 @@
 import axios, { AxiosError } from 'axios';
 
-export async function deploy(host: string, buildType: string, apiKey: string, params: string[][]) {
+export const deploy = async (host: string, buildType: string, apiKey: string, params: string[][]) => {
 
     const headers = {
         'Accept': 'application/json',
@@ -16,12 +16,10 @@ export async function deploy(host: string, buildType: string, apiKey: string, pa
                 id: buildType,
             },
             properties: {
-                property: [...params.map((arg) => {
-                    return {
-                        name: arg[0],
-                        value: arg[1],
-                    };
-                })],
+                property: [...params.map((arg) => ({
+                    name: arg[0],
+                    value: arg[1],
+                }))],
             },
         },
         {headers},
@@ -63,4 +61,4 @@ export async function deploy(host: string, buildType: string, apiKey: string, pa
         }, 5000);
 
     });
-}
+};

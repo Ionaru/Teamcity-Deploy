@@ -12,19 +12,20 @@
         "removeComments": false,
         "resolveJsonModule": true,
         "lib": [
-            "esnext"
+            "esnext",
+            "es2021",
+            "es2020"
         ],
         "module": "commonjs",
         "moduleResolution": "node",
         "outDir": "./dist",
         "sourceMap": true,
-        "target": "es2020",
+        "target": "es2019",
         "typeRoots": [
-            "./node_modules/@types"
+            "node_modules/@types"
         ]
     },
     "files": [
-        "src/index.ts",
         "src/cli.ts"
     ]
 }
