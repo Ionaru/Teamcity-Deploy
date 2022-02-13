@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import axios, { AxiosError } from 'axios';
 
 export const deploy = async (host: string, buildType: string, apiKey: string, params: string[][]) => {

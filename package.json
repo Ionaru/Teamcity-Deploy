@@ -23,19 +23,19 @@
     "repository": "github:Ionaru/teamcity-deploy",
     "license": "MIT",
     "devDependencies": {
-        "@ionaru/eslint-config": "^5.2.0",
+        "@ionaru/eslint-config": "^6.1.0",
         "@types/node": "^16.11.6",
         "@typescript-eslint/eslint-plugin": "^5.3.0",
-        "eslint": "^7.32.0",
+        "eslint": "^8.9.0",
         "eslint-plugin-import": "^2.25.2",
-        "eslint-plugin-jest": "^25.2.3",
+        "eslint-plugin-jest": "^26.1.0",
         "eslint-plugin-no-null": "^1.0.2",
         "eslint-plugin-prefer-arrow": "^1.2.3",
-        "eslint-plugin-sonarjs": "^0.10.0",
-        "eslint-plugin-unicorn": "^38.0.0",
+        "eslint-plugin-sonarjs": "^0.11.0",
+        "eslint-plugin-unicorn": "^40.1.0",
         "typescript": "^4.3.2"
     },
     "dependencies": {
-        "axios": "^0.24.0"
+        "axios": "^0.25.0"
     }
 }

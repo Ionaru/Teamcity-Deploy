@@ -4,7 +4,10 @@ All notable changes to the teamcity-deploy project will be documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-<!-- ## [Unreleased] -->
+## [Unreleased]
+### Security
+- Bumped axios to 0.25.0 to fix underlying follow-redirects security issue.
+
 ## [1.3.1] - 2021-11-08
 ### No changes
 - Version bump.
